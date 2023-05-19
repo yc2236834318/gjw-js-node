@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TDK三大标签SEO搜索优化 -->
+    <!-- 1.title网站标题 -->
+    <title>商品页-购机网</title>
+    <!-- 2.description网站说明 -->
+    <meta
+      name="description"
+      content="购机网-专业的手机网上购物商城，为您提供正品低价的购物选择、优质便捷的服务体验。手机品牌囊括苹果、华为、小米、红米、oppo、vivo、魅族、一加、金立、联想等，满足各种品牌需求。"
+    />
+    <!-- 3.keywords网站关键字 -->
+    <meta
+      name="keywords"
+      content="网上购物,网上商城,手机,苹果、华为、小米、红米、oppo、vivo、魅族、一加、金立、联想、购机网"
+    />
+    <!-- 引入标题图标 -->
+    <link rel="shortcut icon" href="face.ico" />
+    <!-- 引入初始化样式 -->
+    <link rel="stylesheet" href="css/base.css" />
+    <!-- 引入公共样式 -->
+    <link rel="stylesheet" href="css/common.css" />
+    <!-- 引入列表页样式 -->
+    <link rel="stylesheet" href="css/list.css" />
+    <!-- 引入swiper样式 -->
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css" />
+    <!-- 引入公共js -->
+    <script src="js/common.js"></script>
+    <!-- 引入列表页js -->
+    <script src="js/list.js"></script>
+    <!-- 引入登录检测js -->
+    <script src="js/detection.js"></script>
+  </head>
+  <body>
+    <!-- shortcut start -->
+    <div class="shortcut">
+      <div class="layout">
+        <ul class="shortcut-list">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="javascript:void(null)">分类</a></li>
+          <li><a href="javascript:void(null)">手机</a></li>
+          <li><a href="javascript:void(null)">平板</a></li>
+          <li><a href="javascript:void(null)">笔记本</a></li>
+          <li>
+            <a href="javascript:void(null)">
+              下载APP<i class="iconfont triangle">&#xe65a;</i>
+            </a>
+            <!-- 下载APP二维码 -->
+            <div class="shortcut-app">
+              <img src="images/app.png" alt="" />
+              <p>购机网APP</p>
+            </div>
+          </li>
+        </ul>
+        <ul class="login">
+          <li>
+            <a href="login.html" class="log">登录</a>
+            <a href="register.html" class="reg">注册</a>
+            <a href="javascript:void(null)" class="users">
+              <span></span> 欢迎您!
+            </a>
+            <p class="exit">退出登录</p>
+          </li>
+          <li>
+            <a href="javascript:void(null)" class="cart-user">
+              <i class="iconfont">&#xe63b;</i> 购物车
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- shortcut end -->
+
+    <!-- header start -->
+    <header class="header">
+      <div class="layout">
+        <div class="header-left">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo.png" alt="" title="购机网" />
+            </a>
+          </div>
+          <div class="nav">
+            <div class="nav-list">
+              <!-- 手机 -->
+              <div class="nav-sub">
+                <a href="javascript:void(null)">手机</a>
+                <!-- 手机下拉菜单 -->
+                <div class="nav-container">
+                  <ul class="nav-ul">
+                    <li>
+                      <a href="javascript:void(null)">
+                        <div class="nav-img">
+                          <img src="upload/nav_1.png" alt="" />
+                        </div>
+                        <div class="nav-title">Xiaomi 13</div>
+                        <p class="nav-price">3999元起</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(null)">
+                        <div class="nav-img">
+                          <img src="upload/nav_2.png" alt="" />
+                        </div>
+                        <div class="nav-title">Xiaomi 13 Pro</div>
+                        <p class="nav-price">4999元起</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(null)">
+                        <div class="nav-img">
+                          <img src="upload/nav_3.png" alt="" />
+                        </div>
+                        <div class="nav-title">Xiaomi MIX Fold 2</div>
+                        <p class="nav-price">8999元起</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(null)">
+                        <div class="nav-img">
+                          <img src="upload/nav_4.png" alt="" />
+                        </div>
+                        <div class="nav-title">Xiaomi Civi 2</div>
+                        <p class="nav-price">2299元起</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(null)">
+                        <div class="nav-img">
+                          <img src="upload/nav_5.png" alt="" />
+                        </div>
+                        <div class="nav-title">Redmi 12C</div>
+                        <p class="nav-price">699元起</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(null)">
+                        <div class="nav-img">
+                          <img src="upload/nav_6.png" alt="" />
+                        </div>
+                        <div class="nav-title">Redmi K60 Pro</div>
+                        <p class="nav-price">3299元起</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 平板 -->
+              <div class="nav-sub">
+                <a href="javascript:void(null)">平板</a>
+                <!-- 平板下拉菜单 -->
+                <div class="nav-container">
+                  <ul class="nav-ul">
+                    <li>
+                      <a href="javascript:void(null)">
+                        <div class="nav-img">
+                          <img src="upload/nav_7.png" alt="" />
+                        </div>
+                        <div class="nav-title">Xiaomi 13</div>
+                        <p class="nav-price">3999元起</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(null)">
+                        <div class="nav-img">
+                          <img src="upload/nav_8.png" alt="" />
+                        </div>
+                        <div class="nav-title">Xiaomi 13</div>
+                        <p class="nav-price">3999元起</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(null)">
+                        <div class="nav-img">
+                          <img src="upload/nav_9.png" alt="" />
+                        </div>
+                        <div class="nav-title">Xiaomi 13</div>
+                        <p class="nav-price">3999元起</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(null)">
+                        <div class="nav-img">
+                          <img src="upload/nav_7.png" alt="" />
+                        </div>
+                        <div class="nav-title">Xiaomi 13</div>
+                        <p class="nav-price">3999元起</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(null)">
+                        <div class="nav-img">
+                          <img src="upload/nav_10.png" alt="" />
+                        </div>
+                        <div class="nav-title">Xiaomi 13</div>
+                        <p class="nav-price">3999元起</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(null)">
+                        <div class="nav-img">
+                          <img src="upload/nav_11.png" alt="" />
+                        </div>
+                        <div class="nav-title">Xiaomi 13</div>
+                        <p class="nav-price">3999元起</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 笔记本 -->
+              <div class="nav-sub">
+                <a href="javascript:void(null)">笔记本</a>
+                <!-- 笔记本下拉菜单 -->
+                <div class="nav-container">
+                  <ul class="nav-ul">
+                    <li>
+                      <a href="javascript:void(null)">
+                        <div class="nav-img">
+                          <img src="upload/nav_12.png" alt="" />
+                        </div>
+                        <div class="nav-title">Xiaomi 13</div>
+                        <p class="nav-price">3999元起</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(null)">
+                        <div class="nav-img">
+                          <img src="upload/nav_13.png" alt="" />
+                        </div>
+                        <div class="nav-title">Xiaomi 13</div>
+                        <p class="nav-price">3999元起</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(null)">
+                        <div class="nav-img">
+                          <img src="upload/nav_14.png" alt="" />
+                        </div>
+                        <div class="nav-title">Xiaomi 13</div>
+                        <p class="nav-price">3999元起</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(null)">
+                        <div class="nav-img">
+                          <img src="upload/nav_15.png" alt="" />
+                        </div>
+                        <div class="nav-title">Xiaomi 13</div>
+                        <p class="nav-price">3999元起</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(null)">
+                        <div class="nav-img">
+                          <img src="upload/nav_12.png" alt="" />
+                        </div>
+                        <div class="nav-title">Xiaomi 13</div>
+                        <p class="nav-price">3999元起</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(null)">
+                        <div class="nav-img">
+                          <img src="upload/nav_13.png" alt="" />
+                        </div>
+                        <div class="nav-title">Xiaomi 13</div>
+                        <p class="nav-price">3999元起</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- 下拉菜单背景 -->
+            <div class="nav-menu"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <div class="main">
+      <div class="layout">
+        <div class="main-container">
+          <!-- 分类选择模块 -->
+          <div class="classify">
+            <div class="classify-hd">
+              <a href="index.html">首页</a>
+              <i>&gt;</i>
+              <span>分类</span>
+            </div>
+            <div class="classify-bd">
+              <ul class="classify-list brand clearfix">
+                <li class="title">品牌：</li>
+                <li>
+                  <a href="javascript:void(null)" class="current">全部</a>
+                </li>
+                <li><a href="javascript:void(null)">华为系列</a></li>
+                <li><a href="javascript:void(null)">iPhone系列</a></li>
+                <li><a href="javascript:void(null)">小米系列</a></li>
+                <li><a href="javascript:void(null)">红米系列</a></li>
+              </ul>
+              <ul class="classify-list category clearfix">
+                <li class="title">分类：</li>
+                <li>
+                  <a href="javascript:void(null)" class="current">全部</a>
+                </li>
+                <li><a href="javascript:void(null)">手机</a></li>
+                <li><a href="javascript:void(null)">平板</a></li>
+                <li><a href="javascript:void(null)">笔记本</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- 商品模块 -->
+          <div class="channel">
+            <ul class="channel-list">
+              <!-- 商品代码 -->
+              <!-- 前两位:10手机,11平板,12笔记本 -->
+              <!-- 中间两位:10华为,11苹果,12小米,13红米 -->
+              <!-- 最后两位:序号 -->
+
+              <!-- 手机 -->
+              <li class="goods" data-code="101001">
+                <div class="panels">
+                  <a href="goods/goods-hw-sj.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_hw_sj_1.png" alt="" />
+                    </div>
+                    <h3>华为手机</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="101002">
+                <div class="panels">
+                  <a href="goods/goods-hw-sj.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_hw_sj_2.png" alt="" />
+                    </div>
+                    <h3>华为手机</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="101003">
+                <div class="panels">
+                  <a href="goods/goods-hw-sj.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_hw_sj_3.png" alt="" />
+                    </div>
+                    <h3>华为手机</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="101004">
+                <div class="panels">
+                  <a href="goods/goods-hw-sj.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_hw_sj_4.png" alt="" />
+                    </div>
+                    <h3>华为手机</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="101101">
+                <div class="panels">
+                  <a href="goods/goods-pg-sj.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_pg_sj_1.png" alt="" />
+                    </div>
+                    <h3>苹果手机</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="101102">
+                <div class="panels">
+                  <a href="goods/goods-pg-sj.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_pg_sj_2.png" alt="" />
+                    </div>
+                    <h3>苹果手机</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="101103">
+                <div class="panels">
+                  <a href="goods/goods-pg-sj.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_pg_sj_3.png" alt="" />
+                    </div>
+                    <h3>苹果手机</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="101104">
+                <div class="panels">
+                  <a href="goods/goods-pg-sj.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_pg_sj_4.png" alt="" />
+                    </div>
+                    <h3>苹果手机</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="101201">
+                <div class="panels">
+                  <a href="goods/goods-xm-sj.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_xm_sj_1.png" alt="" />
+                    </div>
+                    <h3>小米手机</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="101202">
+                <div class="panels">
+                  <a href="goods/goods-xm-sj.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_xm_sj_2.png" alt="" />
+                    </div>
+                    <h3>小米手机</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="101203">
+                <div class="panels">
+                  <a href="goods/goods-xm-sj.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_xm_sj_3.png" alt="" />
+                    </div>
+                    <h3>小米手机</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="101204">
+                <div class="panels">
+                  <a href="goods/goods-xm-sj.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_xm_sj_4.png" alt="" />
+                    </div>
+                    <h3>小米手机</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="101301">
+                <div class="panels">
+                  <a href="goods/goods-hm-sj.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_hm_sj_1.png" alt="" />
+                    </div>
+                    <h3>红米手机</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="101302">
+                <div class="panels">
+                  <a href="goods/goods-hm-sj.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_hm_sj_2.png" alt="" />
+                    </div>
+                    <h3>红米手机</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="101303">
+                <div class="panels">
+                  <a href="goods/goods-hm-sj.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_hm_sj_3.png" alt="" />
+                    </div>
+                    <h3>红米手机</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="101304">
+                <div class="panels">
+                  <a href="goods/goods-hm-sj.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_hm_sj_4.png" alt="" />
+                    </div>
+                    <h3>红米手机</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <!-- 平板 -->
+              <li class="goods" data-code="111001">
+                <div class="panels">
+                  <a href="goods/goods-hw-pb.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_hw_pb_1.png" alt="" />
+                    </div>
+                    <h3>华为平板</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="111002">
+                <div class="panels">
+                  <a href="goods/goods-hw-pb.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_hw_pb_2.png" alt="" />
+                    </div>
+                    <h3>华为平板</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="111003">
+                <div class="panels">
+                  <a href="goods/goods-hw-pb.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_hw_pb_3.png" alt="" />
+                    </div>
+                    <h3>华为平板</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="111004">
+                <div class="panels">
+                  <a href="goods/goods-hw-pb.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_hw_pb_4.png" alt="" />
+                    </div>
+                    <h3>华为平板</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="111005">
+                <div class="panels">
+                  <a href="goods/goods-hw-pb.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_hw_pb_5.png" alt="" />
+                    </div>
+                    <h3>华为平板</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="111101">
+                <div class="panels">
+                  <a href="goods/goods-pg-pb.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_pg_pb_1.png" alt="" />
+                    </div>
+                    <h3>苹果平板</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="111102">
+                <div class="panels">
+                  <a href="goods/goods-pg-pb.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_pg_pb_2.png" alt="" />
+                    </div>
+                    <h3>苹果平板</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="111201">
+                <div class="panels">
+                  <a href="goods/goods-xm-pb.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_xm_pb_1.png" alt="" />
+                    </div>
+                    <h3>小米平板</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="111202">
+                <div class="panels">
+                  <a href="goods/goods-xm-pb.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_xm_pb_2.png" alt="" />
+                    </div>
+                    <h3>小米平板</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="111203">
+                <div class="panels">
+                  <a href="goods/goods-xm-pb.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_xm_pb_3.png" alt="" />
+                    </div>
+                    <h3>小米平板</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="111204">
+                <div class="panels">
+                  <a href="goods/goods-xm-pb.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_xm_pb_4.png" alt="" />
+                    </div>
+                    <h3>小米平板</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="111301">
+                <div class="panels">
+                  <a href="goods/goods-hm-pb.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_hm_pb_1.png" alt="" />
+                    </div>
+                    <h3>红米平板</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <!-- 笔记本 -->
+              <li class="goods" data-code="121001">
+                <div class="panels">
+                  <a href="goods/goods-hw-bjb.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_hw_bjb_1.png" alt="" />
+                    </div>
+                    <h3>华为笔记本</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="121002">
+                <div class="panels">
+                  <a href="goods/goods-hw-bjb.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_hw_bjb_2.png" alt="" />
+                    </div>
+                    <h3>华为笔记本</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="121003">
+                <div class="panels">
+                  <a href="goods/goods-hw-bjb.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_hw_bjb_3.png" alt="" />
+                    </div>
+                    <h3>华为笔记本</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="121101">
+                <div class="panels">
+                  <a href="goods/goods-pg-bjb.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_pg_bjb_1.png" alt="" />
+                    </div>
+                    <h3>苹果笔记本</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="121102">
+                <div class="panels">
+                  <a href="goods/goods-pg-bjb.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_pg_bjb_2.png" alt="" />
+                    </div>
+                    <h3>苹果笔记本</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="121201">
+                <div class="panels">
+                  <a href="goods/goods-xm-bjb.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_xm_bjb_1.png" alt="" />
+                    </div>
+                    <h3>小米笔记本</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="121202">
+                <div class="panels">
+                  <a href="goods/goods-xm-bjb.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_xm_bjb_2.png" alt="" />
+                    </div>
+                    <h3>小米笔记本</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="121203">
+                <div class="panels">
+                  <a href="goods/goods-xm-bjb.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_xm_bjb_3.png" alt="" />
+                    </div>
+                    <h3>小米笔记本</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="121301">
+                <div class="panels">
+                  <a href="goods/goods-hm-bjb.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_hm_bjb_1.png" alt="" />
+                    </div>
+                    <h3>红米笔记本</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="goods" data-code="121302">
+                <div class="panels">
+                  <a href="goods/goods-hm-bjb.html" target="_blank">
+                    <div class="goods-img">
+                      <img src="upload/list_hm_bjb_2.png" alt="" />
+                    </div>
+                    <h3>红米笔记本</h3>
+                    <p class="price">
+                      <i>&yen;1099</i>
+                      <em>起</em>
+                      <span>多款可选</span>
+                    </p>
+                    <p class="tag">
+                      <i>满2000减200</i>
+                      <span>限时特价</span>
+                    </p>
+                    <p class="comment">
+                      <span>3418人评价</span>
+                      <span>98%好评</span>
+                    </p>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- 猜你喜欢模块 -->
+          <div class="hot">
+            <div class="layout">
+              <div class="hot-hd">
+                <h2>热销单品</h2>
+              </div>
+              <div class="hot-container">
+                <!-- hot swiper -->
+                <div class="swiper hot-swiper">
+                  <!-- 商品列表 -->
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="goods/goods-hm-pb.html" target="_blank">
+                        <div class="hot-img">
+                          <img src="upload/hot_1.png" alt="" />
+                        </div>
+                        <h3>荣耀X40 GT</h3>
+                        <span>144Hz高刷电竞屏</span>
+                        <p>预估到手价<i>&yen; 1969 </i> <em>&yen; 2099</em></p>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="goods/goods-xm-pb.html" target="_blank">
+                        <div class="hot-img">
+                          <img src="upload/hot_2.png" alt="" />
+                        </div>
+                        <h3>Xiaomi 13 Pro</h3>
+                        <span>12G限时优惠200元</span>
+                        <p>预估到手价<i>&yen; 1799 </i> <em>&yen; 1999</em></p>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="goods/goods-xm-sj.html" target="_blank">
+                        <div class="hot-img">
+                          <img src="upload/hot_3.png" alt="" />
+                        </div>
+                        <h3>MacBook Air</h3>
+                        <span>全系标压处理器</span>
+                        <p>预估到手价<i>&yen; 4499 </i> <em>&yen; 5499</em></p>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="goods/goods-pg-sj.html" target="_blank">
+                        <div class="hot-img">
+                          <img src="upload/hot_4.png" alt="" />
+                        </div>
+                        <h3>HUAWEI MatePad</h3>
+                        <span>120Hz柔光屏</span>
+                        <p>预估到手价<i>&yen; 2299 </i> <em>&yen; 2499</em></p>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="goods/goods-hw-sj.html" target="_blank">
+                        <div class="hot-img">
+                          <img src="upload/hot_5.png" alt="" />
+                        </div>
+                        <h3>荣耀 Play5 活力版</h3>
+                        <span>优惠300元+6期免息</span>
+                        <p>预估到手价<i>&yen; 1799 </i> <em>&yen; 2099</em></p>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="goods/goods-hw-bjb.html" target="_blank">
+                        <div class="hot-img">
+                          <img src="upload/hot_6.png" alt="" />
+                        </div>
+                        <h3>AirPods Pro</h3>
+                        <span>第二代</span>
+                        <p>预估到手价<i>&yen; 1799 </i> <em>&yen; 1899</em></p>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="goods/goods-pg-bjb.html" target="_blank">
+                        <div class="hot-img">
+                          <img src="upload/hot_7.png" alt="" />
+                        </div>
+                        <h3>Redmi Note 12 Turbo</h3>
+                        <span>狂暴引擎 超强性能释放</span>
+                        <p>预估到手价<i>&yen; 1999 </i> <em>&yen; 2099</em></p>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="goods/goods-xm-bjb.html" target="_blank">
+                        <div class="hot-img">
+                          <img src="upload/hot_8.png" alt="" />
+                        </div>
+                        <h3>荣耀Earbuds 2 SE</h3>
+                        <span>36小时长续航</span>
+                        <p>预估到手价<i>&yen; 399 </i> <em>&yen; 469</em></p>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- 轮播图左右的箭头按钮 -->
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <!-- 引入swiper的js -->
+                <script src="swiper/swiper-bundle.min.js"></script>
+                <!-- swiper的js -->
+                <script>
+                  var swiper = new Swiper(".hot-swiper", {
+                    slidesPerView: 4, // 一组显示4个轮播图
+                    spaceBetween: 30, // 轮播图间隔
+                    slidesPerGroup: 4, // 4个轮播图为一组
+                    navigation: {
+                      // 左右按钮功能
+                      nextEl: ".swiper-button-next",
+                      prevEl: ".swiper-button-prev",
+                    },
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+          <!-- 右侧导航栏 -->
+          <div class="main-leap">
+            <div class="leap-sub">
+              <a href="javascript:void(null)" class="cart-sub">购物车</a>
+              <a href="javascript:void(null)">在线客服</a>
+              <a href="javascript:void(null)">返回顶部</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer class="footer">
+      <div class="layout">
+        <!-- 保证模块 start -->
+        <div class="slogan">
+          <ul class="slogan-list">
+            <li>
+              <a href="javascript:void(null)"><i></i>官方商城 品质保证</a>
+            </li>
+            <li>
+              <a href="javascript:void(null)"><i></i>7天退货 15天换货</a>
+            </li>
+            <li>
+              <a href="javascript:void(null)"><i></i>48元起免运费</a>
+            </li>
+            <li>
+              <a href="javascript:void(null)"><i></i>售后服务 全国联保</a>
+            </li>
+          </ul>
+        </div>
+        <!-- 保证模块 end -->
+
+        <!-- 服务模块 start -->
+        <div class="service clearfix">
+          <div class="service-left">
+            <dl>
+              <dt>推荐产品</dt>
+              <dd><a href="javascript:void(null)">手机</a></dd>
+              <dd><a href="javascript:void(null)">笔记本</a></dd>
+              <dd><a href="javascript:void(null)">平板</a></dd>
+              <dd><a href="javascript:void(null)">配件</a></dd>
+            </dl>
+            <dl>
+              <dt>品牌</dt>
+              <dd><a href="javascript:void(null)">苹果</a></dd>
+              <dd><a href="javascript:void(null)">华为</a></dd>
+              <dd><a href="javascript:void(null)">小米</a></dd>
+              <dd><a href="javascript:void(null)">oppo</a></dd>
+              <dd><a href="javascript:void(null)">vivo</a></dd>
+            </dl>
+            <dl>
+              <dt>购物相关</dt>
+              <dd><a href="javascript:void(null)">购物指南</a></dd>
+              <dd><a href="javascript:void(null)">退换货政策</a></dd>
+              <dd><a href="javascript:void(null)">配送方式</a></dd>
+              <dd><a href="javascript:void(null)">支付方式</a></dd>
+            </dl>
+            <dl>
+              <dt>关注我们</dt>
+              <dd><a href="javascript:void(null)">新浪微博</a></dd>
+              <dd><a href="javascript:void(null)">官方微信</a></dd>
+              <dd><a href="javascript:void(null)">官方QQ</a></dd>
+              <dd><a href="javascript:void(null)">联系我们</a></dd>
+            </dl>
+            <dl>
+              <dt>快速链接</dt>
+              <dd><a href="javascript:void(null)">首页</a></dd>
+              <dd><a href="javascript:void(null)">列表页</a></dd>
+              <dd><a href="javascript:void(null)">详情页</a></dd>
+              <dd><a href="javascript:void(null)">购物车</a></dd>
+              <dd><a href="javascript:void(null)">服务页</a></dd>
+            </dl>
+          </div>
+          <div class="service-right">
+            <a href="javascript:void(null)" class="online">
+              <p><i></i>在线客服</p>
+            </a>
+            <div class="app">
+              <h2>下载APP</h2>
+              <div class="app-img">
+                <img src="images/app.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 服务模块 end -->
+
+        <!-- 底部声明 start -->
+        <div class="warrant">
+          <ul class="warrant-link">
+            <span>
+              <a href="javascript:void(null)">关于购机网与隐私的声明</a>
+              <i>|</i>
+            </span>
+            <span>
+              <a href="javascript:void(null)">购机网服务协议</a>
+              <i>|</i>
+            </span>
+            <span>
+              <a href="javascript:void(null)">关于购机网推荐服务与隐私的声明</a>
+              <i>|</i>
+            </span>
+            <span>
+              <a href="javascript:void(null)">购机网推荐服务用户协议</a>
+              <i>|</i>
+            </span>
+            <span>
+              <a href="javascript:void(null)">关于cookies</a>
+            </span>
+          </ul>
+          <div class="warrant-link">
+            <span>
+              Copyright © 2020-2023 购机网有限公司 版权所有
+              <i>|</i>
+            </span>
+            <span>
+              <a href="javascript:void(null)">粤ICP备XXXXX号</a>
+              <i>|</i>
+            </span>
+            <span>
+              <a href="javascript:void(null)">XXXXXXXXXXX号粤公网安备</a>
+              <i>|</i>
+            </span>
+            <span>
+              <a href="javascript:void(null)">增值电信业务许可证：粤B2-XXXXX</a>
+            </span>
+            <span>
+              <a href="javascript:void(null)">
+                <img src="images/license.png" alt="" />
+              </a>
+            </span>
+          </div>
+        </div>
+        <!-- 底部声明 end -->
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/1.1.3/axios.min.js"></script>
+    <script src="./js/plugins/layer/layer.min.js"></script>
+    <script src="js/request.js"></script>
+  </body>
+</html>

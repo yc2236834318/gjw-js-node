@@ -1,0 +1,260 @@
+/* 全局模块 */
+:root {
+  --themeColor_1: #ff6700;
+}
+body {
+  position: relative;
+  min-width: 1200px;
+  // overflow-x: hidden;
+  color: #3a3a3a;
+  background: #eee;
+}
+
+/* shortcut模块 */
+.shortcut {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  min-width: 1200px;
+  height: 36px;
+  line-height: 36px;
+  background-color: #000;
+  a {
+    color: #fff;
+    opacity: 0.8;
+    font-size: 13px;
+    i {
+      font-size: 16px;
+      vertical-align: bottom;
+    }
+  }
+  .shortcut-list {
+    float: left;
+    li {
+      float: left;
+      margin-right: 40px;
+    }
+    & li:nth-child(6) {
+      position: relative;
+      .shortcut-app {
+        // 下载APP二维码
+        overflow: hidden;
+        position: absolute;
+        top: 36px;
+        left: 50%;
+        z-index: 999;
+        width: 124px;
+        height: 0;
+        margin-left: -65px;
+        font-size: 14px;
+        color: #333;
+        text-align: center;
+        background: #fff;
+        box-shadow: 0 1px 5px #aaa;
+        transition: height 0.3s;
+        opacity: 1.25 !important;
+        img {
+          margin-top: 20px;
+          width: 90px;
+          height: 90px;
+        }
+      }
+    }
+  }
+  .login {
+    float: right;
+    li {
+      position: relative;
+      float: left;
+      margin-left: 40px;
+      a {
+        float: right;
+      }
+      .reg {
+        margin-right: 10px;
+      }
+      .users {
+        display: none;
+      }
+    }
+    p {
+      display: none;
+      position: absolute;
+      top: 36px;
+      left: 50%;
+      z-index: 99;
+      width: 80px;
+      height: 35px;
+      color: #fff;
+      line-height: 35px;
+      text-align: center;
+      background-color: #000;
+      transform: translateX(-50%);
+      cursor: pointer;
+    }
+  }
+}
+
+/* footer模块 */
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: 40px;
+  .slogan {
+    width: 100%;
+    min-width: 1200px;
+    padding: 25px 0;
+    .slogan-list {
+      display: flex;
+      li {
+        height: 40px;
+        width: 300px;
+        text-align: center;
+        a {
+          display: inline;
+          font-size: 18px;
+          color: #333;
+          vertical-align: middle;
+          text-align: center;
+          i {
+            display: inline-block;
+            vertical-align: middle;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+          }
+        }
+        &:nth-child(1) i {
+          background: url(../images/footer_1.png) no-repeat;
+          background-size: 40px;
+        }
+        &:nth-child(2) i {
+          background: url(../images/footer_2.png) no-repeat;
+          background-size: 40px;
+        }
+        &:nth-child(3) i {
+          background: url(../images/footer_3.png) no-repeat;
+          background-size: 40px;
+        }
+        &:nth-child(4) i {
+          background: url(../images/footer_4.png) no-repeat;
+          background-size: 40px;
+        }
+      }
+    }
+  }
+  .service {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0 20px;
+    border-top: 1px solid #e5e5e5;
+    .service-left {
+      float: left;
+      padding-left: 60px;
+      dl {
+        float: left;
+        width: 200px;
+        padding-right: 39px;
+        dt {
+          margin-bottom: 10px;
+          color: #101010;
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 24px;
+        }
+        dd {
+          a {
+            display: inline;
+            color: #333;
+            font-size: 12px;
+            line-height: 23px;
+          }
+        }
+        &:last-child {
+          width: 150px;
+          padding: 0;
+        }
+      }
+    }
+    .service-right {
+      float: left;
+      width: 180px;
+      height: 180px;
+      .online {
+        display: inline-block;
+        width: 140px;
+        height: 40px;
+        text-align: center;
+        border: 0 solid #000;
+        border-radius: 20px;
+        background: #000;
+        cursor: pointer;
+        p {
+          display: flex;
+          justify-content: center;
+          padding: 8px 0;
+          color: #fff;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0;
+          i {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+            background: url(../images/service.png) no-repeat;
+            background-size: 24px;
+          }
+        }
+      }
+    }
+    .app {
+      width: 250px;
+      margin-top: 20px;
+      margin-bottom: 4px;
+      h2 {
+        font-size: 14px;
+        color: #000;
+        line-height: 24px;
+        letter-spacing: 0;
+      }
+      .app-img {
+        width: 70px;
+        height: 70px;
+        margin-top: 10px;
+      }
+    }
+  }
+  .warrant {
+    max-width: 1200px;
+    height: 80px;
+    margin-top: 20px;
+    color: #707070;
+    .warrant-link {
+      height: 16px;
+      margin-bottom: 5px;
+      line-height: 16px;
+      text-align: center;
+      span {
+        a {
+          display: inline-block;
+        }
+        i {
+          display: inline-block;
+          width: 8px;
+          opacity: 0.42;
+        }
+        img {
+          width: 90px;
+          height: 32px;
+          margin: 0 6px;
+          vertical-align: bottom;
+        }
+      }
+    }
+  }
+}

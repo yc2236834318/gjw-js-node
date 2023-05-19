@@ -1,0 +1,94 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* CSS3 抗锯齿形 让文字显示的更加清晰 */
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "宋体", sans-serif;
+  color: #666;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 版心 */
+.layout {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #666;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+  border: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+em,
+i {
+  font-style: normal;
+}
+
+/* 字体图标 */
+@font-face {
+  font-family: "iconfont";
+  src: url("../fonts/iconfont.ttf") format("truetype");
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 悬浮-阴影 */
+.hover_shadow:hover {
+  transform: scale(1.01);
+  transition: all 0.2s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* 清除浮动 */
+.clearfix:after {
+  visibility: hidden;
+  clear: both;
+  display: block;
+  content: ".";
+  height: 0;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/* 旋转 */
+.ry {
+  display: inline-block;
+  transform: rotate(180deg);
+  transform-origin: 50%;
+  transition: all 0.2s;
+}/*# sourceMappingURL=base.css.map */

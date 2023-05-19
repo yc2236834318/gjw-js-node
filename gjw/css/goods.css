@@ -1,0 +1,38 @@
+.main {
+  background-color: #fff;
+}
+.main .goods {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+.main .goods .img-box {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto 50px;
+}
+.main .goods .img-box img {
+  width: 100%;
+  vertical-align: middle;
+}
+.main .goods h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.main .goods p {
+  font-size: 20px;
+  color: crimson;
+  margin-bottom: 20px;
+}
+.main .goods button {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 30px;
+  color: #fff;
+  background-color: crimson;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}/*# sourceMappingURL=goods.css.map */
