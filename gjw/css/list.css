@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* header模块 */
 .header {
-  overflow: hidden;
   position: relative;
   display: flex;
   width: 100%;
@@ -17,6 +16,8 @@
   display: flex;
 }
 .header .header-left .logo {
+  overflow: hidden;
+  height: 70px;
   margin-right: 40px;
 }
 .header .header-left .logo img {

@@ -1,6 +1,5 @@
 /* header模块 */
 .header {
-  overflow: hidden;
   position: relative;
   display: flex;
   // min-width: 1200px;
@@ -14,6 +13,8 @@
     float: left;
     display: flex;
     .logo {
+      overflow: hidden;
+      height: 70px;
       margin-right: 40px;
       img {
         width: 80px;
