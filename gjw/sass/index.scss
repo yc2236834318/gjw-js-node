@@ -28,8 +28,8 @@
         height: 74px;
         line-height: 74px;
       }
-      /* 下拉菜单内容 */
       .nav-list {
+        /* 下拉菜单内容 */
         display: flex;
         .nav-container {
           display: none;
@@ -95,8 +95,8 @@
           }
         }
       }
-      /* 下拉菜单背景 */
       .nav-menu {
+        /* 下拉菜单背景 */
         overflow: hidden;
         position: absolute;
         top: 74px;
