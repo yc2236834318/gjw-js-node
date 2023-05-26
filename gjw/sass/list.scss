@@ -1,5 +1,6 @@
 /* header模块 */
 .header {
+  overflow: hidden;
   position: relative;
   display: flex;
   // min-width: 1200px;
@@ -15,9 +16,8 @@
     .logo {
       margin-right: 40px;
       img {
-        margin-top: 12px;
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        height: 80px;
       }
     }
     .nav {
