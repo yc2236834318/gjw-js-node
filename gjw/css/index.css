@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* header模块 */
 .header {
+  overflow: hidden;
   position: relative;
   display: flex;
   width: 100%;
@@ -19,13 +20,8 @@
   margin-right: 40px;
 }
 .header .header-left .logo img {
-  margin-top: 12px;
   width: 80px;
   height: 80px;
-}
-.header .header-left .nav {
-  /* 下拉菜单内容 */
-  /* 下拉菜单背景 */
 }
 .header .header-left .nav a {
   color: #000;
@@ -35,6 +31,7 @@
   line-height: 74px;
 }
 .header .header-left .nav .nav-list {
+  /* 下拉菜单内容 */
   display: flex;
 }
 .header .header-left .nav .nav-list .nav-container {
@@ -101,6 +98,7 @@
   color: var(--themeColor_1);
 }
 .header .header-left .nav .nav-menu {
+  /* 下拉菜单背景 */
   overflow: hidden;
   position: absolute;
   top: 74px;
