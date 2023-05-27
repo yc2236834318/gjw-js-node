@@ -1,5 +1,6 @@
 // nodejs模块
 window.addEventListener("load", function () {
+  // 获取本地存储的账号信息
   let username = localStorage.getItem("username");
   let nickname = localStorage.getItem("nickname");
 
@@ -8,6 +9,7 @@ window.addEventListener("load", function () {
   let users = login.querySelector("span");
   let header = document.querySelector(".header");
   let usersCart = header.querySelector("span");
+  // 将本地存储的账号信息渲染到个人信息栏
   users.innerHTML = nickname;
   usersCart.innerHTML = nickname;
 
@@ -16,7 +18,7 @@ window.addEventListener("load", function () {
     let uid = localStorage.getItem("uid"); // 获取用户ID
     let r = await http.get("/api/articles/users/" + uid); // 发起创建商品请求
     console.log(r);
-    let cartArr = r.data.data; // 购物车商品数组
+    let cartArr = r.data.data; // 获取购物车商品数组
     // 将商品数组映射到购物车中
     let liArr = cartArr.map(
       (v) => `
